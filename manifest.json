@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "QR Snip – Screen QR Reader",
+  "short_name": "QR Snip",
+  "version": "1.0.0",
+  "description": "Select an area of the screen, read the QR code inside it and copy its text in one click.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Select and read a QR code (Alt+Shift+Q)",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+Q"
+      },
+      "description": "Select an area and read its QR code"
+    }
+  }
+}

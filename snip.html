@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>QR Snip</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        background: #0f172a;
+        color: #e5e7eb;
+        font: 14px/1.5 system-ui, "Segoe UI", sans-serif;
+      }
+      .message {
+        display: grid;
+        place-items: center;
+        height: 100%;
+        padding: 16px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="lib/jsQR.js"></script>
+    <script src="content/snip.js"></script>
+    <script src="fallback.js"></script>
+  </body>
+</html>
